@@ -1,0 +1,525 @@
+﻿html {
+    font-size: 16px;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* -------------------------------------------------------------main------------------------------------------------------------- */
+main{
+    padding:0;
+    margin:inherit;
+
+}
+
+/* עיצוב המיין */
+main section{
+    position: relative;
+    height: 28rem;
+    background-image: url('../images/different_purple.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* עיצוב הוכתרת במיין */
+main section h1{
+    position: absolute;
+    color:#051E32;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem 2rem 0.6rem 2rem;
+    top: 30%;
+
+
+}
+
+/* עיצוב הכותרת העברית */
+.engtitle {
+    font-size: 80px; 
+    font-weight:700;
+}
+
+/* עיצוב הכותרת בעברית */
+.hebtitle {
+    font-size: 70px; 
+    font-weight:bold;
+}
+
+/* עיצוב הטקסט */
+main section p{
+    position: absolute;
+    top: 60%;
+    color:#051E32;
+    padding: 0.8rem 2.1rem 2.5rem 2rem;
+    max-width: 38rem;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+}
+
+/* עיצוב תפריט הסינון */
+.dropdown-menu {
+    width: 200px;
+    z-index: 2;
+    display: block;
+    position:absolute;
+    margin-right: 2rem;
+    right: 0;
+    top: 7rem;
+    font-size: large;
+    background-color: #f8ffff;
+    text-align: right;
+    color: #051E32;
+    padding: 5px;
+
+  }
+
+
+
+
+/* -------------------------------------------------------------NAV------------------------------------------------------------- */
+
+
+/* עיצוב כפתור המבורגר וכפתור סגירה */
+.btn-mobile {
+    border: none;
+    background: none;
+    padding: .5rem;
+}
+
+/* כפתור סגירת תפריט */
+#close-nav-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+/* אייקון תפריט */
+
+.btn-mobile img {
+    width: 5rem; 
+    height: 3rem; 
+}
+
+/* תפריט ניווט */
+/* עימוד בטור במובייל */
+.flex-container-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #051E32;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: fixed;
+    height: 35%;
+    width: 50%;
+    top: 0;
+    padding-top: 6rem;
+    z-index: 1; /* Set z-index to bring the nav above other elements */
+}
+
+/* עיצוב פריטי התפריט */
+.flex-container-nav li {
+    margin-bottom: 1rem;
+}
+
+/* לא נרצה שמתחת לפריט התחתון יהיה רווח */
+.flex-container-nav li:last-child {
+    margin-bottom: 0;
+}
+
+/* עיצוב הטקסט בתפריט */
+.flex-container-nav li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+
+}
+
+/* הצגת תפריט המבורגר במובייל */
+.btn-mobile {
+    display: block;
+}
+
+/* הסתרת התפריט במובייל */
+.flex-container-nav.hide-mobile {
+    display: none;
+}
+
+/* -------------------------------------------------------------תוכן------------------------------------------------------------- */
+
+/* עיצוב קוביות התוכן */
+.flex-container-subjects {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure relative positioning for child elements */
+    z-index: 0; /* Set z-index for the main content to be below the nav */
+}
+
+/* עימוד טקסט */
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+/* עיצוב כותרת */
+.text-container h2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+
+}
+
+/* עיצוב כל פריט*/
+.flex-container-subjects li {
+    position: relative;
+    width: 100%; 
+    height: 25rem;
+    margin: 0;
+    color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    /*flex: 1 0 100%;/* /* Adjust as needed for the desired width percentage */
+    /*max-width: 100%; /* Adjust as needed for the desired width percentage */
+
+    
+}
+
+/* עיצוב הטקסט בפריט */
+.flex-container-subjects li span p {
+    max-width: 20rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: right;
+    margin-right: 2rem;
+    display: block;
+}
+
+/* עימטב בפריטים */
+.flex-container-subjects li span {
+    flex-grow: 1;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+        
+}
+
+
+/* הגדרות התמונה בפריט */
+.flex-container-subjects li span img {
+    max-width: 40%;
+    max-height: 40%;
+    width: auto;
+    height: auto;
+    border-radius: 0% 0% 0 0;
+    margin: 0.5rem;
+    margin-right: 1rem;
+}
+
+
+/* הגדרות הכפתור בפריט */
+.flex-container-subjects li button {
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background-color: #051E32;
+    color: #f3f3f3;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+
+}
+
+
+
+
+/* -------------------------------------------------------------פופ אפ ------------------------------------------------------------- */
+
+/* כותרת פופאפ */
+.modal-title {
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #051E32;
+
+}
+
+/* תוכן פופאפ */
+.modal-content {
+    background-color: #ffffff;
+    color: #051E32;
+    padding: 1rem;
+}
+
+/* תוכן פופאפ */
+.modal-body {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: weight 400;
+    font-size: large;
+
+}
+
+
+/* כפתור פופאפ */
+.btn-btn-default {
+    background-color: #051E32; 
+    color: #fff; 
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* פוטר פופאפ */
+.modal-footer {
+    display: flex;
+    justify-content: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/* -------------------------------------------------------------צבעים קוביות------------------------------------------------------------- */
+ 
+/* צבע של כל אחד מהפריטים*/
+#li1 {
+    background-color: #003a6a;
+}
+
+#li2 {
+    background-color: #d43670;
+}
+#li3 {
+    background-color: #5f48af;
+}
+#li4 {
+    background-color: #3da0a5;
+}
+#li5 {
+    background-color: #003a6a;
+}
+#li6 {
+    background-color: #df4f42;
+}
+#li7 {
+    background-color: #d43670;
+}
+#li8 {
+    background-color: #5f48af;
+}
+#li9 {
+    background-color: #3da0a5;
+}#li10 {
+    background-color: #df4f42;
+}
+
+
+/* --------------------------------------------------------הגדרות מסך גדול-------------------------------------------------------- */
+
+
+
+/* הגדרות במסכים ברוחב מעל 768 פיקסל */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+
+    /* עיצוב החלק המרכזי */
+    main {
+        padding: inherit;
+    }
+
+    /* הסתרת תפריט המבורגר במסך גדול */
+    .btn-mobile {
+        display: none;
+    }
+
+    /* עימוד התפריט בשורה במסך גדול ושינוי צבע */
+    .flex-container-nav {
+        flex-direction: row;
+        padding: 0.7rem;
+        background-color: #051E32;
+        position: relative;
+        height: unset;
+        width: 100%;
+        top: 0;
+    }
+
+    /* הצגת התפריט פתוח במסך גדול */
+    .flex-container-nav.hide-mobile {
+        display: flex;
+    }
+
+    /* עיצוב פריטי התפריט */
+    .flex-container-nav li {
+        margin-left: 1rem;
+        margin-bottom: 0;
+        font-size: 18px;
+
+    }
+
+    .flex-container-subjects li {
+        margin: 0;
+        flex-basis: 100; 
+        max-width: 100%; 
+        
+    }
+
+    תמונות בתחתית המסך
+    .flex-container-images {
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .img-wrapper {
+        max-width: 30%;
+    }
+
+    /* במסך גדול כותרת לא ממורכזת */
+    
+    .engtitle, .hebtitle {
+        font-size: 60px; 
+        text-align: center;
+        
+    }
+}
+
+/* --------------------------------------------------------הגדרות מסך קטן-------------------------------------------------------- */
+/* כל ההגדרות רק מותאמות למובייל */
+@media only screen and (max-width: 767px) {
+
+    nav {
+        background-color:#051E32;
+    }
+
+    main section{
+        position: relative;
+        height: 40rem;
+        background-image: url('../images/different_purple.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section h1{
+        position: absolute;
+        color:#051E32;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 2rem 2rem 0.6rem 2rem;
+        top: 25%;
+    
+    
+    }
+    
+    /* עיצוב הכותרת העברית */
+    .engtitle {
+        font-size: 38px; 
+        font-weight:700;
+    }
+
+    /* עיצוב הכותרת בעברית */
+    .hebtitle {
+        font-size: 38px; 
+        font-weight:bold;
+    }
+ 
+    main section p{
+        position: absolute;
+        top: 45%;
+        color:#051E32;
+        padding: 0.8rem 2.1rem 2.5rem 2rem;
+        max-width: 38rem;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        margin-bottom: 0;
+    
+    }
+
+
+    .dropdown-menu {
+        width: 100px;
+        z-index: 2;
+        display: block;
+        position:absolute;
+        margin-right: 2rem;
+        right: 0;
+        top: 85%;
+        font-size: large;
+        background-color: #f8ffff;
+        text-align: right;
+        color: #051E32;
+        padding: 5px;
+
+    }
+
+
+
+    .flex-container-subjects li {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 3rem;
+    }
+
+    .flex-container-subjects li span  {
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+
+    .flex-container-subjects li span p {
+    margin-right: 0;    
+    max-width: 25rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: right;
+    font-size: small;      
+    
+    }
+
+    .flex-container-subjects li button {
+        margin-left: 0; 
+        margin-bottom: 4rem;
+        font-size: 75%;
+    }
+
+    .flex-container-subjects li span img {
+        max-width: 60%;
+        max-height: 60%;
+        width: auto;
+        height: auto;
+        border-radius: 0% 0% 0 0;
+        margin: 0.5rem;
+        margin-right: 1rem;
+    }
+    
+    .text-container h1{
+        margin-right: none;
+    }
+
+
+
+
+}

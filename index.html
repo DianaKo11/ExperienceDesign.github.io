@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>experience design</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="jScripts/javascript.js"></script>
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <button id="nav-button" class="btn-mobile" onclick="ToggleNav()"><img src="images/menu.png"
+                    alt="ניווט"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <button id="close-nav-button" class="btn-mobile" onclick="ToggleNav()"><img src="images/nav-close.svg"
+                        alt="סגירה"></button>
+                <li><a href="#">דף הבית</a></li>
+                <li><a href="#">עיצוב חוויה</a></li>
+                <li><a href="#">מי אנחנו</a></li>
+                <li><a href="#">צרו קשר</a></li>
+            </ul>
+    </div>
+        </nav>
+        <main>
+            <section>
+                <span>
+                 <h1 class="engtitle">Experience Design
+                 </h1>  
+                 <h1 class="hebtitle">
+                </br>/עיצוב חוויה
+                 </h1> 
+                </span>
+                <span>
+                <p>                   
+                    עיצוב חוויה הוא תחום מתפתח המתמקד ביציאת אינטרקאציות משמעותיות ומהנות בין המשתמש למוצר או לשירות.
+                    
+                    בעיצוב חוויה אנחנו שואפים ליצור אינטארקציות חיוביות ומהנות, שמתעלות מעבר לרק פונקציונאליות.
+                    
+                    אנחנו לוקחים בחשבון את כל המסע שעובר המשתמש, ושואפים לספק חוויות שהן לא סתם ידידותיות למשתמש, אלא בעלות אימפקט רגשי של
+                    ממש.
+                </br></br></br>
+                    גללו למטה להצגת כל התחומים או בחרו תחום מהרשימה:
+                    <select id="dropdown-menu" class="dropdown-menu" onchange="showSelectedElement()">
+                        <option value="">בחרו תחום</option>
+                        <option value="li1">בתחום הרכב</option>
+                        <option value="li2">בתחום הקמעונאות</option>
+                        <option value="li3">בתחום הפיטנס</option>
+                        <option value="li4">בתחום הבית החכם</option>
+                        <option value="li5">בתחום המוזיאונים</option>
+                        <option value="li6">בתחום המסעדנות</option>
+                        <option value="li7">בתחום הטכנולוגי</option>
+                        <option value="li8">בתחום הההופעות החיות</option>
+                        <option value="li9">בתחום הרפואה</option>
+                        <option value="li10">בתחום התחבורה הציבורית</option>
+                    </select>
+                </p>
+
+                </span>
+
+
+            </section>
+
+            <ul class="flex-container-subjects" id="list-items">
+                <!-- Each <li> contains an image, a text, and a button -->
+                <li id="li1">                    
+                  <span>  
+                    <img src="images/woman-using-navigation-system-while-driving-car.jpg" alt="Example 1">
+                    <div class="text-container">
+                        <h2>
+                            בתחום הרכב
+                        </h2>
+                        <p>
+                            בעולם המכוניות עיצוב חווית הנהיגה מהווה חלק מרכזי בתכנון ובניית הרכב. רכב שנוסע טוב כבר לא יספק כל נהג, והחוויה היא המפתח להצלחה. לוחות מחוונים ארגונומיים ואינטואיטיביים, כפתורי בקרה נוחים וברורית ואחסון הממוקם במקומות אסטרטגיים כולם תורמים לחוויית נהיגה משודרגת ומהנה.
+                        </p>
+                    </div>
+                  </span>                   
+                    <button class="btn" data-toggle="modal" data-target="#myModal1">צפייה בדוגמא</button>
+                </li>
+            
+                <li id="li2">
+                    <span>
+                        <img src="images/2.jpg" alt="Example 2">
+                        <div class="text-container">
+                            <h2>
+                                בתחום הקמעונאות
+                            </h2>
+                            <p>
+                                בעולם של תחרות הולכת וגוברת, חנויות רבות מחפשות דרכים חדשות וייחודיות למשוך לקוחות ולעודד אותם לקנות. מעבר למחירים אטרקטיביים ומבצעים מיוחדים, חנויות רבות משקיעות ביצירת חווית קנייה ייחודית שתגרום ללקוחות לחזור שוב ושוב. חוויית קנייה ייחודית יכולה להתחיל כבר מהרגע הראשון שבו הלקוח נכנס לחנות. עיצוב מיוחד, תאורה נעימה, מוזיקה נכונה ואווירה נעימה יכולים לתרום רבות לחוויה חיובית.
+                            </p>
+                        </div>
+                    </span>
+                    
+                    <button class="btn" data-toggle="modal" data-target="#myModal2">צפייה בדוגמא</button>
+                </li>
+
+                <li id="li3">
+                    <span>
+                        <img src="images/woman-running-treadmill.jpg" alt="Example 3">
+                        <div class="text-container">
+                            <h2>
+                                בתחום הפיטנס
+                            </h2>
+                            <p>
+                                חווית משתמש טובה במכשירי ספורט חשובה לאימון יעיל ומהנה. היא מתבטאת בממשק פשוט ואינטואיטיבי, התאמה אישית, עיצוב נוח, משוב ברור ומעודד, תוכניות מגוונות ומרתקות, ואינטגרציה עם טכנולוגיה .חווית משתמש שלילית תגרום לכם להימנע מהמכשיר, וחוויה טובה תעודד אתכם להשתמש בו שוב ושוב.
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn" data-toggle="modal" data-target="#myModal3">צפייה בדוגמא</button>
+                </li>
+
+                <li id="li4">
+                    <span>
+                        <img src="images/smart-home-controller-.jpg" alt="Example 4">
+                        <div class="text-container">
+                            <h2>
+                                בתחום הבית החכם
+                            </h2>
+                            <p>
+                                עוד תחום בו החוויה נמצאת במרכז היא עולם הבית החכם. חוויית טובה ומיוחדת במוצרי בית חכם חיונית להנאה, יעילות וקלות שימוש. בית חכם שעשוי בצורה ייחודית ויעילה מאפשר ליהנות מהפונקציות השונות, לחסוך זמן וטרחה, ולהפוך את הבית שלכם לחכם ונוח יותר. על מוצרים להיות אינטואיטיביים ,יעילים ומהנים לשימוש, נגישים לכולם ואמינים לאורך זמן.                        </p>
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn" data-toggle="modal" data-target="#myModal4">צפייה בדוגמא</button>
+                </li>
+
+                <li id="li5">
+                    <span>
+                        <img src="images/museum-aveiro.jpg" alt="Example 5">
+                        <div class="text-container">
+                            <h2>
+                                בתחום המוזיאונים
+                            </h2>
+                            <p>
+                                בעולם המודרני, מקומות כמו מוזיאונים יכולים בקלות לאבד את הרלוונטיות שלהם ולהישאר מאחור. חשוב שמוזיאונים יציעו חוויה מיוחדת ומתקדמת שתגרום למבקרים להרגיש מעורבים, נרגשים ומונעים. ניתן ליצור חוויה ייחודית אותה באמצעות טכנולוגיות חדשות, תערוכות חדשניות, אירועים מיוחדים, עיצוב נעים ושירות אדיב. חוויה מיוחדת ומתקדמת היא חיונית להצלחת מוזיאון בעולם המודרני, והופכת את הביקור בו לחוויה בלתי נשכחת.                   
+                            </p>
+                        </div>
+                        </span>
+                        <button class="btn" data-toggle="modal" data-target="#myModal5">צפייה בדוגמא</button>
+                </li>
+  
+                <li id="li6">
+                    <span>
+                        <img src="images/7437.jpg" alt="Example 6">
+                        <div class="text-container">
+                            <h2>
+                                בתחום המסעדנות
+                            </h2>
+                            <p>
+                                בעולם הקולינריה התחרותי של היום, מסעדות רבות מתמקדות באיכות האוכל והשירות, אך על מנת להתבלט במגוון הענק שקיים עליהן ליצור חוויה מיוחדת ללקוחות שלהן. חוויה זו כוללת את כל האלמנטים שאינם קשורים ישירות לאוכל, כמו האווירה במסעדה, העיצוב, המוזיקה, התאורה וקונספט שובה ומיוחד.
+                            </p>
+                        </div>
+                        </span>
+                        <button class="btn" data-toggle="modal" data-target="#myModal6">צפייה בדוגמא</button>
+                </li>
+
+                <li id="li7">
+                    <span>
+                        <img src="images/9686.jpg" alt="Example 7">
+                        <div class="text-container">
+                            <h2>
+                                בתחום הטכנולוגי
+                            </h2>
+                            <p>
+                                בעולם הטכנולוגי התחרותי של היום, חווית השימוש במוצר הפכה לגורם מכריע בהצלחתן של חברות ומוצרים. היצע עצום של מוצרים ושירותים טכנולוגיים גורם ללקוחות להיות בררנים וקלים למעבר למתחרה. ציפיות גבוהות לחוויות איכותיות וקלות לשימוש הן באפליקציות והן באתרי אינטרנט, הופכות את החוויה ליתרון תחרותי משמעותי. חוויה טובה כוללת ממשק קל לשימוש, עיצוב מושך, פונקציונליות יעילה, אמינות, ותמיכה זמינה. חברות רבות משקיעות משאבים רבים בשיפור החוויה ובמיקוד בעולם הלקוח.
+                            </p>
+                        </div>
+                        </span>
+                        <button class="btn" data-toggle="modal" data-target="#myModal7">צפייה בדוגמא</button>
+                </li>
+
+                <li id="li8">                   
+                    <span>
+                        <img src="images/excited-audience-watching-confetti-fireworks-having-fun-music-festival-night-copy-space.jpg" alt="Example 8">
+                        <div class="text-container">
+                            <h2>
+                                בתחום ההופעות החיות
+                            </h2>
+                            <p>
+                                עיצוב חוויה בעולם ההופעות החיות הולך ונעשה חשוב יותר ויותר. הופעה מיוחדת שמתמקדת בחוויית הקהל יכולה להפוך עוד הופעה רגילה לאירוע בלתי נשכח. הדבר בא לידי ביטוי בעיצוב במה מיוחד, תאורה מחושבת, אינטראקטיביות עם הקהל, שימוש בD3 ובאביזרים שונים. 
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn" data-toggle="modal" data-target="#myModal8">צפייה בדוגמא</button> 
+                </li>
+
+                <li id="li9">
+                    <span>
+                        <img src="images/doctor-diagnose-patient-symptoms-hospital.jpg" alt="Example 9">
+                        <div class="text-container">
+                            <h2>
+                                בתחום הרפואה
+                            </h2>
+                            <p>
+                                חוויית המשתמש משפיעה על הדרך בה אנשים משתמשים בשירותי הבריאות ויכולה להשפיע על התמודדותם עם תהליכי הטיפול. יותר ויותר נהיים פופולאריים יישומונים למעקב אחרי המצב הבריאותי ומכשור רפואי לביש. יצירת חוויה חיובית למטופל יכולה לסייע לו לנווט במערכת הבריאות, לקבל המלצות מבוססות התאמה אישית ועוד. 
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn" data-toggle="modal" data-target="#myModal9">צפייה בדוגמא</button>                
+                </li>
+
+                <li id="li10">
+                    <span>
+                        <img src="images/woman-using-mobile-phone-london-underground.jpg" alt="Example 10">
+                        <div class="text-container">
+                            <h2>
+                                בתחום התחבורה הציבורית
+                            </h2>
+                            <p>
+                                חווית המשתמש בעולם התחבורה הציבורית מהווה את המפתח להצלחת השירות ושימוש מוגבר בתחבורה זו. בתחום זה, חוויה טובה משקפת את רמת הנגישות, הנוחות, הביטחון והיעילות של השירות. זהו הגורם המכריע בהקשר של בחירת תחבורה, שכן משתמשים רוצים להרגיש שהם מקבלים את הערך המירבי עבור כספם וזמנם. בנוסף, מידע ברור ותהליכי רכישה פשוטים משפרים את חווית המשתמש ומעודדים יותר נסיעות בתחבורה הציבורית. 
+                            </p>
+                        </div>
+                    </span>
+                    <button class="btn" data-toggle="modal" data-target="#myModal10">צפייה בדוגמא</button>                
+                </li>
+
+            </ul>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog ">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">טסלה</h4>
+                </div>
+                <div class="modal-body">
+                    
+                        טסלה היא אחת מפריצות הדרך בעולם עיצוב החוויה. יחד עם מסכי הטאצ' הגדולים והנוחות שבנהיגה פיצ'ר בולט שמתמקד בחווית השימוש של הנהג הוא ה- Sentry Mode. כאשר אתם עוזבים את הרכב, הוא ממשיך לעקוב אחרי הסביבה ולצלם את כל מה שקורה מסביבו, כך שאם נשמה טובה החליטה לנשק את הפגוש שלכם בחניה או שמשאית החליטה להוריד לכם את המראה, אתם תוכלו מיד לשמור סרטון ולשלוח אותו לחברת הביטוח בלי שום בעיה.                     
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog ">
+        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">איקאה</h4>
+                    </div>
+                    <div class="modal-body">
+                        איקאה, רשת שוודית לרהיטים ומוצרי בית, התפרסמה בזכות הגישה החדשנית שלה לתחום הקמעונאות וחוויית הקניה הייחודית שהיא מציעה בחנויות שלה. חנויות איקאה מעוצבות כחללי תצוגה עצומים בהם לקוחות יכולים לשוטט בין חדרים ומקומות מגורים מרוהטים לחלוטין. המוצרים מסודרים לפי חדרים, מה שמאפשר ללקוחות לדמיין איך הפריטים ייראו בבית שלהם. בנוסף, מעודד מודל שירות עצמי בו לקוחות מנווטים בחנות באופן עצמאי, בוחרים ואוספים מוצרים בעצמם, ואף מרכיבים אותם לבד.                  
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal-->
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog ">
+        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Peleton Bike</h4>
+                    </div>
+                    <div class="modal-body">
+                        אופני ה-Peloton Bike מציעים חוויית משתמש מתקדמת המשלבת טכנולוגיה, עיצוב ותוכן. מסך מגע ידידותי מאפשר
+                        גישה נוחה לאימונים חיים ומוקלטים, תוך הצגת נתוני ביצועים והתאמת הגדרות. רמת ההתנגדות ניתנת להתאמה אישית,
+                        והאופניים מצוידים במושב נוח וידית אחיזה ארגונומית. ספריית אימונים רחבה ומגוונת, בהדרכת מדריכים מקצועיים,
+                        מעניקה חוויה מוטיבציה ומעוררת השראה. בניית האופניים יציבה וחזקה, והקהילה התומכת תורמת לחוויית אימון
+                        מיטבית. </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Nest Learning Thermostat</h4>
+                </div>
+                <div class="modal-body">
+                    ה-Nest Learning Thermostat מבית Google הוא תרמוסטט חכם שזכה להצלחה רבה בזכות חוויית המשתמש יוצאת הדופן שלו. קל לשימוש,
+                    יעיל וחוסך באנרגיה, ומאפשר שליטה מלאה על אקלים הבית. הדבר שמייחד אותו ממוצרים אחרים הוא הלמידה שלו - התרמוסטט לומד את
+                    הרגלי השינה וההתנהגות שלכם, ומכוון את עצמו באופן אוטומטי לטמפרטורה הרצויה לכם, תוך חיסכון משמעותי באנרגיה. ניתן לתכנת
+                    אותו לפי ימים ושעות, ליצור תוכניות מותאמות אישית, להגדיר זיהוי נוכחות ועוד. תכונות מתקדמות כמו ניטור איכות האוויר,
+                    התראות על תקלות וחיבור למערכות בית חכם אחרות הופכות אותו לבחירה מושלמת עבור אלו המחפשים תרמוסטט חכם, יעיל וקל לשימוש.
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog ">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">מוזיאון העיצוב בלונדון</h4>
+                </div>
+                <div class="modal-body">
+                    מוזיאון העיצוב בלונדון מציע חוויה ייחודית לכל חובב עיצוב, הן מבחינת התערוכות המוצגות בו והן מבחינת עיצוב המוזיאון עצמו.
+                    התערוכות במוזיאון אינן מסתפקות בהצגת פריטים סטטיים, אלא הן משלבות אלמנטים אינטראקטיביים ומרתקים שמעוררים את המבקרים
+                    ומזמינים אותם לקחת חלק פעיל בחוויה. עיצוב המוזיאון מודרני ומרשים, החלל פתוח ומזמין, והאווירה נעימה ומעוררת השראה. כל אלה
+                    הופכים את מוזיאון העיצוב בלונדון למקום מושלם וחוייתי.
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal6" role="dialog">
+            <div class="modal-dialog ">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Dans Le Noir?</h4>
+                    </div>
+                    <div class="modal-body">
+                        הייחודיות של המסעדה טמונה בחוויית האכילה הייחודית שהיא מציעה, האורחים אוכלים את ארוחתם בחדר חשוך לחלוטין, תוך הסתמכות
+                        בלעדית על חוש הטעם, הריח והמגע. חוויה זו מאפשרת לאורחים לחוות את האוכל בצורה חדשה ומפתיעה, תוך התמקדות בטעמים ובמרקמים.
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal7" role="dialog">
+            <div class="modal-dialog ">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">APPLE</h4>
+                    </div>
+                    <div class="modal-body">
+                        אפל ידועה בזכות חווית המשתמש הייחודית שלה, המשלבת פשטות, אינטגרציה, אסתטיקה, קוהרנטיות, חדשנות ועוד. מוצריה קלים לשימוש,
+                        עובדים בצורה חלקה יחד, מעוצבים בצורה יפה ומלוטשת, ומספקים חוויה אחידה בכל פלטפורמה. אפל שולטת הן בחומרה והן בתוכנה, מה
+                        שמאפשר לה להבטיח חוויה חלקה ומתואמת. תשומת לב רבה לפרטים הקטנים וחשיבה מתמדת על חדשנות משלימות את התמונה ויוצרות חווית
+                        משתמש יוצאת דופן. 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal8" role="dialog">
+            <div class="modal-dialog ">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Coldplay</h4>
+                    </div>
+                    <div class="modal-body">
+                        הופעות של Coldplay הן שם דבר בעולם המוזיקה. הן ידועות בזכות האנרגיה הגבוהה, ההפקה הגרנדיוזית, השימוש בטכנולוגיות חדשניות
+                        והחיבור המיוחד בין הלהקה לקהל. בהופעות מחולקים צמידים זוהרים לכל אחד בקהל, שמשנים צבעים בהתאם למוזיקה ויוצרים מראה מרהיב
+                        לקהל. באחד מסיבובי ההופעות הבמה עליה היו חברה הלהקה הייתה מונפת בצורת כדור פורח מעל הקהל ועוד.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal9" role="dialog">
+            <div class="modal-dialog ">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Headspace</h4>
+                    </div>
+                    <div class="modal-body">
+                        Headspace היא אפליקציה פופולרית למדיטציה והרגעה המציעה מגוון תכנים ותרגילים המסייעים להפחית לחץ, חרדה ודיכאון, ולשפר את
+                        איכות השינה והריכוז. האפליקציה מציעה מגוון תכנים כמו תכניות מדיטציה מותאמות אישית למטרות שונות, תרגילי נשימה פשוטים,
+                        סיפורים קצרים ומרגיעים, מוזיקה מרגיעה ועוד. בנוסף, האפליקציה מציעה קהילה תומכת – פורום קהילתי, קבוצות מדיטציה ואפשרויות
+                        של חיבור עם מומחים בתחום.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal10" role="dialog">
+            <div class="modal-dialog ">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Uber</h4>
+                    </div>
+                    <div class="modal-body">
+                        Uber מייצגת דוגמה מובהקת לחברה בתחום התחבורה הציבורית שמצליחה ליצור חווית שימוש מצוינת. באמצעות האפליקציה, המשתמשים
+                        יכולים להזמין ולשלם עבור נסיעות בקלות ונוחות, בזמן שהמערכת המתקדמת מספקת מידע ודירוגים על הנהגים ומאפשרת להתאים את
+                        השירות לצרכי המשתמשים בצורה אישית. בכך, Uber מצליחה לשמש דוגמה מרשימה לאיך עיצוב החוויה והשימוש המתקדם בטכנולוגיה יכולים
+                        לשנות את תפקוד ואת המבנה של תעשיית התחבורה הציבורית.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-btn-default" data-dismiss="modal">סגירה</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
